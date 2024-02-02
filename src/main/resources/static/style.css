@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #662225;
+}
+
+.header{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    background-color: #EAD39C;
+    align-items: center;
+}
+
+.logoConteiner{
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.navPanel{
+    display: flex;
+}
+
+.navPanelItem{
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.logoConteiner img{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    margin-top: 50px;
+    width: 1612px;
+    background-color: #7D5E3C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.hellowPictureConteiner{
+    padding-top: 20px;
+    width: 1288px;
+    height: 1288px;
+    overflow: hidden;
+}
+
+.hellowPictureConteiner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.hellowText{
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+    width: 1288px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

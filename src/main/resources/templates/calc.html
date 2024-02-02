@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="calc.css" th:href="@{calc.css}">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="logoConteiner">
+                <img src="img/logoImg.jpg" th:href="@{logoImg.jpg}">
+            </div>
+            <div class="navPanel">
+                <div id="calc" class="navPanelItem">
+                    <a href="/calc">
+                        Калькулятор 🌐
+                    </a>
+                </div>
+                <div id="weather" class="navPanelItem">
+                    <a href="/weather">
+                        Погода 🌦️ 
+                    </a>
+                </div>
+                <div id="university" class="navPanelItem">
+                    <a href="/university">
+                        Университеты 📚
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contentCalc">
+            <form>
+                <div class="calc">
+                
+                    <input type="text" class="displayAnswer">
+                    
+                    <div class="btn( btn">
+                        (
+                    </div>
+
+                    <div class="btn) btn">
+                        )
+                    </div>
+
+                    <div class="btn^ btn">
+                        ^
+                    </div>
+
+                    <div class="btn/ btn">
+                        /
+                    </div>
+
+                    <div class="btn7 btn">
+                        7
+                    </div>
+
+                    <div class="btn8 btn">
+                        8
+                    </div>
+
+                    <div class="btn9 btn">
+                        9
+                    </div>
+
+                    <div class="btn* btn">
+                        *
+                    </div>
+
+                    <div class="btn4 btn">
+                        4
+                    </div>
+
+                    <div class="btn5 btn">
+                        5
+                    </div>
+
+                    <div class="btn6 btn">
+                        6
+                    </div>
+
+                    <div class="btn- btn">
+                        -
+                    </div>
+
+                    <div class="btn1 btn">
+                        1
+                    </div>
+
+                    <div class="btn2 btn">
+                        2
+                    </div>
+
+                    <div class="btn3 btn">
+                        3
+                    </div>
+
+                    <div class="btn+ btn">
+                        +
+                    </div>
+
+                    <div class="btnC btn">
+                        C
+                    </div>
+
+                    <div class="btn0 btn">
+                        0
+                    </div>
+
+                    <div class="btn← btn">
+                        ←
+                    </div>
+
+                    <div class="btn= btn">
+                        =
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            @2024
+        </div>
+    </div>
+    <script src="scriptCalc.js" th:href="@{scriptCalc.js}"></script>
+</body>
+</html>
