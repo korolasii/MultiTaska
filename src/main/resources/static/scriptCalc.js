@@ -24,4 +24,30 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    function submitForm(event) {
+        event.preventDefault();
+
+
+        var inputValue = inputField.value;
+
+
+        fetch('/calculate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                inputValue: inputValue,
+            }),
+        })
+            .then(response => response.json())
+            .then(data => {
+
+                inputField.value = data.returnedValue;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+
 });
