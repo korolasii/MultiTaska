@@ -11,18 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (buttonValue === '←') {
                 inputField.value = inputField.value.slice(0, -1);
             } else if (buttonValue === '=') {
-                submitForm()
+                submitForm(inputField);
             } else {
                 inputField.value += buttonValue;
             }
         });
     });
 
-    function submitForm() {
-
-        var inputField = document.getElementById('displayAnswer');
+    function submitForm(inputField) {
         var expression = inputField.value;
-
 
         fetch('/calculate', {
             method: 'POST',
@@ -33,10 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
             .then(response => response.json())
             .then(data => {
-                inputField.value = data.result;
+                inputField.value = data;
             })
             .catch(error => console.error('Error:', error));
     }
-
-
 });
