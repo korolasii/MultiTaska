@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Введіть місто</title>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div class="logoConteiner">
+            <img src="img/logoImg.jpg">
+        </div>
+        <div class="navPanel">
+            <div id="calc" class="navPanelItem">
+                <a href="/calc">
+                    Калькулятор 🌐
+                </a>
+            </div>
+            <div id="weather1" class="navPanelItem">
+                <a href="/weather1">
+                    Погода 🌦️
+                </a>
+            </div>
+            <div id="university" class="navPanelItem">
+                <a href="/university">
+                    Университеты 📚
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contentCalc">
+        <h1>Введіть назву міста:</h1>
+        <form action="/weather2" method="post">
+            <input type="text" name="city" placeholder="Місто">
+            <button type="submit">Пошук</button>
+        </form>
+    </div>
+    <div class="footer">
+        @2024
+    </div>
+</div>
+</body>
+</html>

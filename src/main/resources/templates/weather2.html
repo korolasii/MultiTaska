@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода у місті</title>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+
+        <div class="navPanel">
+            <div id="calc" class="navPanelItem">
+                <a href="/calc">
+                    Калькулятор 🌐
+                </a>
+            </div>
+            <div id="weather" class="navPanelItem">
+                <a href="/weather1">
+                    Погода 🌦️
+                </a>
+            </div>
+            <div id="university" class="navPanelItem">
+                <a href="/university">
+                    Университеты 📚
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contentCalc">
+        <h1>Погода у місті <span th:text="${city}"></span></h1>
+        <p>Температура: <span th:text="${weatherInfo.temp}"></span>°C</p>
+        <p>Вологість: <span th:text="${weatherInfo.humidity}"></span>%</p>
+        <p>cloud: <span th:text="${weatherInfo.cloud}"></span>%</p>
+        <p>Тиск: <span th:text="${weatherInfo.pressure}"></span>hPa</p>
+
+        <form action="/weather1" method="get">
+            <button type="submit">Назад</button>
+        </form>
+    </div>
+    <div class="footer">
+        @2024
+    </div>
+</div>
+</body>
+</html>
